@@ -1,89 +1,105 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.0.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.0.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>З Днем Народження від Шерстини і Пиріжочка!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #f4e4ff, #ffecf0);
+            color: #333;
+            text-align: center;
+            overflow: auto;
         }
-      });
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #6b4e9e;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin: 15px 0;
+        }
+        .cat-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 10px;
+            border: 3px solid #ff9999;
+            transition: transform 0.3s ease;
+        }
+        .cat-img:hover {
+            transform: scale(1.1);
+        }
+        .cat-label {
+            font-size: 1em;
+            color: #6b4e9e;
+            margin: 5px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background: #ff9999;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #ff6666;
+        }
+        #wish {
+            font-style: italic;
+            color: #6b4e9e;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Нінчик Лапчик, з Днем Народження! 🐾</h1>
+        <p>Мур-мур, Нінчик! Ми, Шерстина і Пиріжочок, твої пухнасті друзі, хочемо сказати, що ти — найкрутіша людина у світі! 😺</p>
+        <p>Ти завжди знаєш, де найзатишніша подушка, і твій сміх — як звук відкривання котячої консерви! Нехай твій день буде м’яким, як наше хутро, і смачним, як торт із кремом! 🎂</p>
+        <div>
+            <img src="/Users/olesia/Downloads/photo_2025-07-26_14-20-58-removebg-preview.png" alt="Шерстина" class="cat-img">
+            <div class="cat-label">Шерстина</div>
+        </div>
+        <div>
+            <img src="/Users/olesia/Downloads/photo_2025-07-26_14-19-20-removebg-preview.png" alt="Пиріжочок" class="cat-img">
+            <div class="cat-label">Пиріжочок</div>
+        </div>
+        <p>Тисни на кнопку, щоб отримати наше котяче побажання!</p>
+        <button onclick="showWish()">Муркни побажання!</button>
+        <p id="wish"></p>
+    </div>
+    <script>
+        const wishes = [
+            "Мурр, бажаємо тобі цілий ящик котячих ласощів і нуль будильників! 😸",
+            "Нехай твої дні будуть такими ж затишними, як коробка, в яку ми любимо залазити! 📦",
+            "Пиріжочок каже: будь пухнастою і щасливою, як я після обіду! 😺",
+            "Шерстина мурчить: хай усі твої мрії ловляться, як мишки! 🐭",
+            "Бажаємо тобі м’якої подушки і сонця в кожному дні! 🌞"
+        ];
+        function showWish() {
+            const wishElement = document.getElementById('wish');
+            const randomWish = wishes[Math.floor(Math.random() * wishes.length)];
+            wishElement.textContent = randomWish;
+            wishElement.style.display = 'block';
+        }
     </script>
-  </body>
+</body>
 </html>
